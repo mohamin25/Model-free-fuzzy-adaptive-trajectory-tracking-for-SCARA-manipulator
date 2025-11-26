@@ -1,0 +1,1 @@
+# Model-free-fuzzy-adaptive-trajectory-tracking-for-SCARA-manipulator

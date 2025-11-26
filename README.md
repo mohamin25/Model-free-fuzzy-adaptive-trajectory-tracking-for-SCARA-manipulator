@@ -26,59 +26,7 @@ The goal of this project is to implement and simulate an advanced, model-free co
 
 ---
 
-## 🛠️ Requirements and Setup
 
-To run the simulation, you will need the following software and toolboxes:
-
-### Software Prerequisites
-
-* **MATLAB** (R2018b or newer is recommended)
-* **Simulink**
-
-### Required Toolboxes
-
-* **Fuzzy Logic Toolbox** (Essential for the implementation of the Fuzzy Logic System)
-
-### Repository Structure (Suggested)
-
-| File Name | Description |
-| :--- | :--- |
-| `fuzzy_adaptive_dsc.slx` | The main Simulink model file containing the controller and robot dynamics. |
-| `scara_parameters.m` | A MATLAB script to define the physical parameters of the SCARA robot. |
-| `control_gains.m` | A MATLAB script to initialize controller gains, trajectory definition, and fuzzy system parameters. |
-| `results/` | Directory for storing output plots and data (e.g., tracking error, joint velocities). |
-
----
-
-## 🚀 Running the Simulation
-
-Follow these steps to open and execute the Simulink model:
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [Your Repository URL]
-    ```
-2.  **Open MATLAB:** Navigate to the cloned repository directory in the MATLAB command window.
-3.  **Initialize Parameters:** Run the necessary initialization scripts (e.g., `control_gains.m`) to set up the workspace variables.
-    ```matlab
-    control_gains;
-    ```
-4.  **Open the Model:** Load the Simulink file.
-    ```matlab
-    open('fuzzy_adaptive_dsc.slx')
-    ```
-5.  **Run Simulation:** Set the desired simulation time and click the "Run" button in the Simulink environment.
-6.  **Analyze Results:** View the performance plots on the scopes within the model, which typically show the desired vs. actual trajectory and the tracking error.
-
----
-
-## 📈 Expected Outcomes
-
-The model-free fuzzy adaptive DSC is expected to demonstrate superior performance characteristics compared to non-adaptive or model-based controllers:
-
-* **High Tracking Accuracy:** Minimized steady-state tracking error.
-* **Robustness:** Stable performance even in the presence of unknown robot parameters or external disturbances.
-* **Boundedness:** All signals in the closed-loop system (control input, states, and adaptive parameters) remain bounded.
 
 ---
 
